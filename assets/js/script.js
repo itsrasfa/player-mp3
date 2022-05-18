@@ -94,7 +94,7 @@ function updateBar() {
 function secondsMin(seconds) {
   let minutesField = Math.floor(seconds / 60);
   let secondsField = seconds % 60;
-  return `0${minutesField}:${secondsField}`
+  return `0${minutesField}:0${secondsField}`
 }
 
 function favMusic() {
