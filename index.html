@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <main class="container">
+    <img src="./assets/imgs/3.jpg">
+    <div class="player-container">
+      <div class="player-desc">
+        <h2>Sunset Dream</h2>
+        <div class="desc">
+          <p>Cheel</p>
+          <span class="material-symbols-outlined heart">favorite</span>
+        </div>
+      </div>
+      <div class="player-time">
+        <div class="bar">
+          <progress value="0" max="1"></progress>
+        </div>
+        <div class="time">
+          <p id="start">0:00</p>
+          <p id="end">02:43</p>
+        </div>
+      </div>
+      <div class="player-icons">
+        <span class="material-symbols-outlined skip previous">fast_rewind</span>
+        <span class="material-symbols-outlined play">play_circle</span>
+        <span class="material-symbols-outlined pause">pause_circle</span>
+        <span class="material-symbols-outlined skip next">fast_forward</span>
+      </div>
+    </div>
+    <audio src="./assets/music/Sunset Dream - Cheel.mp3"></audio>
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
