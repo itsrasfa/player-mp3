@@ -94,7 +94,10 @@ function updateBar() {
 function secondsMin(seconds) {
   let minutesField = Math.floor(seconds / 60);
   let secondsField = seconds % 60;
-  return `0${minutesField}:0${secondsField}`
+  if (secondsField < 10) {
+    secondsField = '0' + secondsField
+  }
+  return `0${minutesField}:${secondsField}`
 }
 
 function favMusic() {
