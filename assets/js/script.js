@@ -50,6 +50,7 @@ document.querySelector('.previous').addEventListener('click', () => {
     indexMusic = musics.length - 1;
   }
   updateMusic(indexMusic);
+  playMusic();
 });
 
 document.querySelector('.next').addEventListener('click', () => {
@@ -59,6 +60,7 @@ document.querySelector('.next').addEventListener('click', () => {
     indexMusic = 0;
   }
   updateMusic(indexMusic);
+  playMusic();
 });
 
 // functions
@@ -69,7 +71,7 @@ function updateMusic(index) {
   musicName.textContent = musics[index].title;
   musicArtist.textContent = musics[index].artist;
   musicImg.src = musics[index].img;
-  stopMusic();
+
 }
 
 function playMusic() {
@@ -105,5 +107,4 @@ function favMusic() {
 }
 
 updateMusic(indexMusic);
-
 
